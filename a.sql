@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS Company;
+USE Company;
+
+CREATE TABLE IF NOT EXISTS EMPLOYEE (
+    Emp_ID INT PRIMARY KEY,
+    Emp_Name VARCHAR(50),
+    Dept_ID INT,
+    Salary DECIMAL(10,2)
+);
+
+INSERT INTO EMPLOYEE (Emp_ID, Emp_Name, Dept_ID, Salary) VALUES
+(101, 'Ravi', 10, 25000.00),
+(102, 'Priya', 20, 30000.00),
+(103, 'Kiran', 10, 28000.00),
+(104, 'Anu', 30, 35000.00);
+
+SELECT * FROM EMPLOYEE;
